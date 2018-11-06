@@ -1,0 +1,240 @@
+<?php include('header.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+	* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+
+
+
+.header h1 {
+    font-size: 40px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+
+
+
+.navbar a.right {
+    float: right;
+}
+
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #aaa;
+    padding: 20px;
+}
+
+
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: lightblue;
+    width: 100%;
+    padding: 20px;
+}
+.fakeimg img {
+    border-radius: 50%;
+}
+.fakeimg1 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.fakeimg2 {
+    background-color: lightblue;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+a{
+  text-decoration: none;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+    border-radius: 50%;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+    border-radius: 50%;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;
+border-radius: 50%;}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+    border-radius: 50%;
+}
+header
+{
+  text-align: center;
+  background-color: black;
+}
+#grad1 {
+    height: 100%;
+    background-image: linear-gradient(to left, rgb(245, 0, 255), rgb(204, 204, 255)); 
+}
+
+</style>
+</head>
+<body>
+ <header>
+<button class="button button1"><a href = "index.html">Home</a></button>
+<button class="button button2"><a href = "achievements.html">Achievements</a></button>
+<button class="button button3"><a href = "hobbies.html">Hobbies</a></button>
+<button class="button button4"><a href = "About.html">About Me</a></button>
+<button class="button button5"><a href = "questions.html">Questions?</a></button>
+</header>
+
+
+
+
+
+<div class="row" id="grad1">
+  <div class="side"id = "grad1">
+      <h2>About Me</h2>
+      
+      <div class="fakeimg"><img src="img/picture.jpg" height=30%; width=100%;></div>
+      <h6>Dota 2 Professional Gamer at <a href="#">Team XingXing</a><h6>
+	<h6>Studies at STI College Ortigas-Cainta<h6>
+	<h6>Studied BSIT-Information Technology at <a href="#">STI College Balayan</a><h6>
+	<h6>Went to Balayan Nation High School<h6>
+	<h6>Lives in Manila, Philippines<h6>
+	<h6>From Calaca, Batangas<h6>
+	<h6>Manages Stoners Gaming and Manong Bro<h6>
+	<div class="fakeimg2"><img src="img/cat.jpg" height=30%; width=100%;></div>
+
+  </div>
+  <div class="main" id="grad1">
+      <h2>Questions?</h2>
+      <h5>Twitch.Tv/KUYAYELSTREAM</h5>
+    	<input type="text" name="" style="width: 50%; height: 50%;">
+    	<button>Submit</button>
+      <br>
+      
+  </div>
+</div>
+
+<div class="footer">
+  <h2><a href="#">Twitch.tv/KUYAYELSTREAM</a></h2>
+</div>
+
+</body>
+</html>
